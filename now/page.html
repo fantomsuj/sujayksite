@@ -461,6 +461,7 @@
     
     
     
+<style>.framer-127bies{display:none!important}</style>
 </head>
 <body>
     <script async src="https://events.framer.com/script?v=2" data-fid="7a7cf60af80924fdd60da85636fe6af06def8eeb39f73b88099397527bf5519e" data-no-nt></script>
@@ -470,6 +471,24 @@
     <script data-relative-date-script="global">!function(){var l=new Map;function R(t,e,n){let r=[n,{numeric:e,style:t}],o=JSON.stringify(r),s=l.get(o);if(s)return s;let i=new Intl.RelativeTimeFormat(...r);return l.set(o,i),i}function g(t,e,n,a,r,o,s){let i=M(t,e,n),h=x(t,e,i),c=R(a,r,s).format(h,i);return o?d(c):c}function d(t){return t.charAt(0).toUpperCase()+t.slice(1)}function M(t,e,n){if(n!=="auto")return n;let a=y(t,e);if(Math.abs(a)<=7)return"day";let r=p(t,e);if(Math.abs(r)<=4)return"week";let o=v(t,e);return Math.abs(o)<=12?"month":"year"}var T=1e3,F=6e4,w=36e5,_=864e5,S=6048e5;function x(t,e,n){let a=t.getTime()-e.getTime();switch(n){case"second":return Math.trunc(a/T);case"minute":return Math.trunc(a/F);case"hour":return Math.trunc(a/w);case"day":return y(t,e);case"week":return p(t,e);case"month":return v(t,e);case"quarter":return I(t,e);case"year":return O(t,e)}let r=n}function f(t){let e=new Date(t);return e.setHours(0,0,0,0),e}function y(t,e){let n=f(t),a=f(e),r=n.getTime()-u(n),o=a.getTime()-u(a);return Math.round((r-o)/_)}function m(t){let e=new Date(t),n=e.getDay(),a=(n<1?7:0)+n-1;return e.setDate(e.getDate()-a),e.setHours(0,0,0,0),e}function p(t,e){let n=m(t),a=m(e),r=n.getTime()-u(n),o=a.getTime()-u(a);return Math.round((r-o)/S)}function v(t,e){let n=t.getFullYear()-e.getFullYear(),a=t.getMonth()-e.getMonth();return n*12+a}function D(t){let e=t.getMonth();return Math.trunc(e/3)}function I(t,e){let n=t.getFullYear()-e.getFullYear(),a=D(t)-D(e);return n*4+a}function O(t,e){return t.getFullYear()-e.getFullYear()}function u(t){let e=t.getFullYear(),n=new Date(Date.UTC(e,t.getMonth(),t.getDate(),t.getHours(),t.getMinutes(),t.getSeconds(),t.getMilliseconds()));return t.getTime()-n.setUTCFullYear(e)}window.__framer_formatRelativeDate=g;
 }()</script>
     <div id="main"></div>
+<section id="now-curiosities" style="max-width:960px;margin:60px auto 32px;padding:32px 28px;border:1px solid rgba(255,255,255,0.08);border-radius:16px;background:rgba(0,0,0,0.65);color:#f7fff7;font-family:'Inter', 'Inter Placeholder', sans-serif;line-height:1.7;box-shadow:0 12px 30px rgba(0,0,0,0.35);">
+      <h1 style="margin:0 0 12px;font-size:32px;letter-spacing:-0.02em;">Now</h1>
+      <p style="margin:0 0 16px;color:#cfd8dc;">Curiosities I’m chasing right now: the overlap of decentralized energy and how we build things.</p>
+      <ul style="margin:0 0 20px 18px;padding:0;color:#e8f1f2;">
+        <li style="margin-bottom:8px;">How rooftop solar, batteries, and EVs can be orchestrated into resilient virtual power plants.</li>
+        <li style="margin-bottom:8px;">Financing models that make neighborhood microgrids pencil for both homeowners and utilities.</li>
+        <li style="margin-bottom:8px;">Sensor-driven construction workflows—prefab + on-site robotics that cut waste and schedule risk.</li>
+        <li>Where permitting and interconnection bottlenecks can be shaved down with better software tooling.</li>
+      </ul>
+      <div style="margin-top:12px;">
+        <h2 style="margin:0 0 10px;font-size:20px;letter-spacing:-0.01em;color:#f7fff7;">Listening</h2>
+        <p style="margin:0 0 8px;color:#cfd8dc;">Dialing in on conversations that sharpen those ideas:</p>
+        <ul style="margin:0 0 0 18px;padding:0;color:#e8f1f2;">
+          <li style="margin-bottom:6px;"><a href="https://dialectic.fm/" style="color:#7dd3fc;text-decoration:none;">Dialectic</a> — policy, markets, and the messy middle of energy transition.</li>
+          <li><a href="https://www.stripe.com/blog/cheeky-pint-with-john-collison" style="color:#7dd3fc;text-decoration:none;">A cheeky pint with John Collison</a> — building and compounding with curiosity.</li>
+        </ul>
+      </div>
+    </section>
     <script >!function(){var l="framer_variant";function u(a,r){let n=r.indexOf("#"),t=n===-1?r:r.substring(0,n),i=n===-1?"":r.substring(n),e=t.indexOf("?"),m=e===-1?t:t.substring(0,e),h=e===-1?"":t.substring(e),s=new URLSearchParams(h),d=new URLSearchParams(a);for(let[o,g]of d)s.has(o)||o!==l&&s.append(o,g);let c=s.toString();return c===""?t+i:m+"?"+c+i}var w='div#main a[href^="#"],div#main a[href^="/"],div#main a[href^="."]',f="div#main a[data-framer-preserve-params]",p=document.currentScript?.hasAttribute("data-preserve-internal-params");if(window.location.search&&!/bot|-google|google-|yandex|ia_archiver|crawl|spider/iu.test(navigator.userAgent)){let a=document.querySelectorAll(p?`${w},${f}`:f);for(let r of a){let n=u(window.location.search,r.href);r.setAttribute("href",n)}}
 }()</script>
     
