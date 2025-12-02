@@ -28,6 +28,40 @@
         justify-content:space-between;align-items:center;
     }
     </style>
+    <script>
+    (() => {
+      const matchesResume = (el) => {
+        const text = (el.textContent || "").toLowerCase();
+        return text.includes("resume") && text.includes("sujay");
+      };
+      const hideNode = (el) => {
+        if (!el) return;
+        const target = el.closest("a,button") || el;
+        if (target.dataset.resumeHidden) return;
+        target.style.display = "none";
+        target.dataset.resumeHidden = "true";
+      };
+      const scan = (root) => {
+        if (!(root instanceof Element)) return;
+        if (matchesResume(root)) hideNode(root);
+        root.querySelectorAll("a,button,div,span").forEach((node) => {
+          if (matchesResume(node)) hideNode(node);
+        });
+      };
+      const observer = new MutationObserver((records) => {
+        records.forEach((record) => record.addedNodes.forEach(scan));
+      });
+      const start = () => {
+        observer.observe(document.documentElement, { childList: true, subtree: true });
+        scan(document.body);
+      };
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", start, { once: true });
+      } else {
+        start();
+      }
+    })();
+    </script>
     <meta name="generator" content="Framer 94ad37d">
     <title>Sujay Kolpuru</title>
     <meta name="description" content="What am I up to now?">
